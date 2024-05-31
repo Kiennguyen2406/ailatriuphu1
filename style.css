@@ -54,3 +54,12 @@ body {
 #start-button:hover {
     background: #0056b3;
 }
+#reset-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

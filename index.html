@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ai là triệu phú</title>
+    <title>Start Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body>
-<div id="game-container">
-    <h1>Ai là triệu phú</h1>
-    <div id="question-container">
-        <div id="question"></div>
-        <div id="options">
-            <button class="option" data-option="A"></button>
-            <button class="option" data-option="B"></button>
-            <button class="option" data-option="C"></button>
-            <button class="option" data-option="D"></button>
-        </div>
-    </div>
-    <div id="message"></div>
-    <button id="start-button">Bắt đầu trò chơi</button>
-    <p>Điểm số cao: <span id="high-score"></span></p>
-</div>
+<body background="464282.jpg">
+<div class="container">
+    <h1 style="color: yellow">Welcome to Millionaire Quiz!</h1>
+    <p style="color: yellow">Bạn đã sẵn sàng dành lấy 1 triệu đô chưa $1,000,000?</p>
+
+    <button id="kien" onclick="window.location.href='trangweb.html'">Bắt đầu trò chơi</button>
 <script src="script.js"></script>
+</div>
 </body>
 </html>

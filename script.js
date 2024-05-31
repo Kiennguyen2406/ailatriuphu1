@@ -131,8 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionElement = document.getElementById('question');
     const optionsButtons = document.querySelectorAll('.option');
     const messageElement = document.getElementById('message');
-    const startButton = document.getElementById('start-button');
     const highScoreElement = document.getElementById('high-score');
+    const retryButton = document.getElementById('retry-button');
+    const resetButton = document.getElementById('reset-button');
 
     highScoreElement.textContent = highScore;
 
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex = 0;
         currentPrizeIndex = 0;
         messageElement.textContent = '';
-        startButton.style.display = 'none';
+        retryButton.style.display = 'none';
         showNextQuestion();
     }
 
@@ -154,11 +155,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.disabled = false;
                 button.style.backgroundColor = '#f0f0f0';
             });
+
         } else {
             messageElement.textContent = 'Chúc mừng! Bạn đã trả lời đúng tất cả các câu hỏi và giành được 1.000.000$!';
-            startButton.textContent = 'Chơi lại';
-            startButton.style.display = 'inline-block';
-            updateHighScore(currentPrizeIndex);
+
         }
     }
 
@@ -168,31 +168,51 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = questions[currentQuestionIndex];
 
         if (selectedOption === question.answer) {
+            alert('Tuyệt vời')
             messageElement.textContent = `Đúng rồi! Bạn đã giành được ${prizeMoney[currentPrizeIndex]}$.`;
+
+            updateHighScore(prizeMoney[currentPrizeIndex]);
             currentQuestionIndex++;
             currentPrizeIndex++;
-            setTimeout(showNextQuestion, 1000);
+
+            setTimeout(showNextQuestion, 2000);
         } else {
+            alert('Buồn ghê')
             messageElement.textContent = `Sai rồi! Đáp án đúng là ${question.answer}. Bạn giành được ${currentPrizeIndex > 0 ? prizeMoney[currentPrizeIndex - 1] : 0}$.`;
-            startButton.textContent = 'Chơi lại';
-            startButton.style.display = 'inline-block';
-            updateHighScore(currentPrizeIndex - 1);
+            retryButton.style.display = 'inline-block';
+            updateHighScore(prizeMoney[currentPrizeIndex--]);
         }
     }
 
     function updateHighScore(score) {
         if (score > highScore) {
             highScore = score;
+            console.log(highScore);
             localStorage.setItem('highScore', highScore);
             highScoreElement.textContent = highScore;
         }
+    }
+
+    function retryGame() {
+        startGame();
+    }
+    function resetGame() {
+        highScore = 0;
+        localStorage.setItem('highScore', highScore);
+        highScoreElement.textContent = highScore;
     }
 
     optionsButtons.forEach(button => {
         button.addEventListener('click', selectAnswer);
     });
 
-    startButton.addEventListener('click', startGame);
+    optionsButtons.forEach(button => {
+        button.addEventListener('click', selectAnswer);
+    });
 
-    startButton.style.display = 'inline-block';
+    retryButton.addEventListener('click', retryGame);
+    resetButton.addEventListener("click", resetGame);
+
+    // Start the game automatically
+    startGame();
 });
