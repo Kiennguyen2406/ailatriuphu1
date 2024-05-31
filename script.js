@@ -119,6 +119,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 D: "London"
             },
             answer: "C"
+        },
+        {
+            question: "Ai là người sáng lập Facebook?",
+            options: {
+                A: "Mark Zuckerberg",
+                B: "Jeff Bezos",
+                C: "Bill Gates",
+                D: "Steve Jobs"
+            },
+            answer: "A"
+        },
+        {
+            question: "Cây cối nào tượng trưng cho Canada?",
+            options: {
+                A: "Sồi",
+                B: "Thiên đường",
+                C: "Thiên Nga",
+                D: "Hồng anh"
+            },
+            answer: "A"
+        },
+        {
+            question: "Tác phẩm 'The Starry Night' là của ai?",
+            options: {
+                A: "Vincent van Gogh",
+                B: "Leonardo da Vinci",
+                C: "Pablo Picasso",
+                D: "Michelangelo"
+            },
+            answer: "A"
         }
     ];
 
