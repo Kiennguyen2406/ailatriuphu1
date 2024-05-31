@@ -211,7 +211,6 @@ document.addEventListener('DOMContentLoaded', () => {
             swal("Buồn ghê!", "You clicked the button!", "error");
             messageElement.textContent = `Sai rồi! Đáp án đúng là ${question.answer}. Bạn giành được ${currentPrizeIndex > 0 ? prizeMoney[currentPrizeIndex - 1] : 0}$.`;
             retryButton.style.display = 'inline-block';
-            updateHighScore(prizeMoney[currentPrizeIndex--]);
         }
     }
 
