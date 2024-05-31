@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
@@ -198,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = questions[currentQuestionIndex];
 
         if (selectedOption === question.answer) {
-            alert('Tuyệt vời')
+            swal("Tuyệt vời!", "You clicked the button!", "success");
             messageElement.textContent = `Đúng rồi! Bạn đã giành được ${prizeMoney[currentPrizeIndex]}$.`;
 
             updateHighScore(prizeMoney[currentPrizeIndex]);
@@ -207,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(showNextQuestion, 2000);
         } else {
-            alert('Buồn ghê')
+            swal("Buồn ghê!", "You clicked the button!", "error");
             messageElement.textContent = `Sai rồi! Đáp án đúng là ${question.answer}. Bạn giành được ${currentPrizeIndex > 0 ? prizeMoney[currentPrizeIndex - 1] : 0}$.`;
             retryButton.style.display = 'inline-block';
             updateHighScore(prizeMoney[currentPrizeIndex--]);
@@ -226,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function retryGame() {
         startGame();
     }
+
     function resetGame() {
         highScore = 0;
         localStorage.setItem('highScore', highScore);
