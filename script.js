@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
-            question: "Thủ đô của Pháp là gì?",
+            question: "Câu 1:Thủ đô của Pháp là gì?",
             options: {
                 A: "Paris",
                 B: "London",
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "A"
         },
         {
-            question: "Hành tinh nào được gọi là Hành tinh Đỏ?",
+            question: "Câu 2:Hành tinh nào được gọi là Hành tinh Đỏ?",
             options: {
                 A: "Trái Đất",
                 B: "Sao Hỏa",
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "B"
         },
         {
-            question: "Ai là tác giả của 'Romeo và Juliet'?",
+            question: "Câu 3:Ai là tác giả của 'Romeo và Juliet'?",
             options: {
                 A: "Mark Twain",
                 B: "Charles Dickens",
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Đơn vị tiền tệ của Nhật Bản là gì?",
+            question: "Câu 4:Đơn vị tiền tệ của Nhật Bản là gì?",
             options: {
                 A: "Yuan",
                 B: "Won",
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Thành phố nào được gọi là 'Thành phố Ánh sáng'?",
+            question: "Câu 5:Thành phố nào được gọi là 'Thành phố Ánh sáng'?",
             options: {
                 A: "New York",
                 B: "Paris",
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "B"
         },
         {
-            question: "Ai là tổng thống thứ 16 của Hoa Kỳ?",
+            question: "Câu 6:Ai là tổng thống thứ 16 của Hoa Kỳ?",
             options: {
                 A: "George Washington",
                 B: "Thomas Jefferson",
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Người phát minh ra bóng đèn điện là ai?",
+            question: "Câu 7:Người phát minh ra bóng đèn điện là ai?",
             options: {
                 A: "Nikola Tesla",
                 B: "Alexander Graham Bell",
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Ngôn ngữ chính thức của Brazil là gì?",
+            question: "Câu 8:Ngôn ngữ chính thức của Brazil là gì?",
             options: {
                 A: "Tây Ban Nha",
                 B: "Anh",
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "D"
         },
         {
-            question: "Thành phố nào là thủ đô của Canada?",
+            question: "Câu 9:Thành phố nào là thủ đô của Canada?",
             options: {
                 A: "Toronto",
                 B: "Vancouver",
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Ai là nhà soạn nhạc của bản giao hưởng 'Fifth Symphony'?",
+            question: "Câu 10:Ai là nhà soạn nhạc của bản giao hưởng 'Fifth Symphony'?",
             options: {
                 A: "Mozart",
                 B: "Beethoven",
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "B"
         },
         {
-            question: "Chất hóa học nào có công thức H2O?",
+            question: "Câu 11:Chất hóa học nào có công thức H2O?",
             options: {
                 A: "Nước",
                 B: "Khí Oxy",
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "A"
         },
         {
-            question: "Thành phố nào tổ chức Thế vận hội Mùa hè 2008?",
+            question: "Câu 12Thành phố nào tổ chức Thế vận hội Mùa hè 2008?",
             options: {
                 A: "Athens",
                 B: "Sydney",
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "C"
         },
         {
-            question: "Ai là người sáng lập Facebook?",
+            question: "Câu 13:Ai là người sáng lập Facebook?",
             options: {
                 A: "Mark Zuckerberg",
                 B: "Jeff Bezos",
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "A"
         },
         {
-            question: "Cây cối nào tượng trưng cho Canada?",
+            question: "Câu 14:Cây cối nào tượng trưng cho Canada?",
             options: {
                 A: "Sồi",
                 B: "Thiên đường",
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "A"
         },
         {
-            question: "Tác phẩm 'The Starry Night' là của ai?",
+            question: "Câu 15:Tác phẩm 'The Starry Night' là của ai?",
             options: {
                 A: "Vincent van Gogh",
                 B: "Leonardo da Vinci",
