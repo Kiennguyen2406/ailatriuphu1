@@ -1,0 +1,79 @@
+/* Đặt nền cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('maxresdefault.jpg');
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Thêm hình nền nếu cần */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Đặt phong cách cho khung chính */
+center {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Nút bắt đầu trò chơi */
+#start {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#start:hover {
+    background-color: #45a049;
+}
+
+/* Phong cách cho câu hỏi */
+#Cauhoi {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Phong cách cho các nút lựa chọn */
+button[id^='luachon'] {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[id^='luachon']:hover {
+    background-color: #007B9A;
+}
+
+/* Phong cách cho phản hồi sau khi trả lời */
+#traloi {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
